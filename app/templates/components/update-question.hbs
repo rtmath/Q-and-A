@@ -1,0 +1,16 @@
+<h3>Update Question: "{{question.quest}}"</h3>
+  <div>
+    <form>
+      <div class="form-group">
+        <label>Question:</label>
+        {{input type="text" value=quest placeholder=question.quest}}
+      </div>
+
+      <div class="form-group">
+        <label>Notes:</label>
+        {{input value=notes placeholder=question.notes}}
+      </div>
+
+      <button {{action 'update' question}}>Save</button>
+    </form>
+  </div>

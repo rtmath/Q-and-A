@@ -2,5 +2,7 @@
 Answer by: {{answer.author}}
 <div>
   {{answer.answerBody}}
-  <button {{action 'delete' answer}}>Delete</button>
+  <button {{action 'delete' answer}}>
+    <span class="glyphicon glyphicon-trash"></span>
+  </button>
 </div>

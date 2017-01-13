@@ -1,15 +1,20 @@
+<h3>{{question.quest}}</h3>
+<h5>by {{question.author}}</h5>
 
 <span>{{question.notes}}</span>
-<br>
-<br>
-<button {{action 'delete' question}}>Delete Question</button>
-<br>
-<br>
+
+<div>{{#link-to 'update' question.id}}
+  <span class="glyphicon glyphicon-pencil"></span>
+{{/link-to}}</div>
+
+<button {{action 'delete' question}}>
+  <span class="glyphicon glyphicon-trash"></span>
+</button>
+
 <hr>
 <ul>
   {{#each question.answers as |answer|}}
     {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
-    <br>
     <br>
   {{/each}}
 </ul>
