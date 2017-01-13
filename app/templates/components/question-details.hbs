@@ -1,14 +1,14 @@
 
-<span>More details about {{question.author}}'s question</span>
+<span>{{question.notes}}</span>
 <br>
 <br>
+<button {{action 'delete' question}}>Delete Question</button>
 <br>
 <br>
-
+<hr>
 <ul>
   {{#each question.answers as |answer|}}
-    {{answer-tile answer=answer}}
-    <br>
+    {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
     <br>
     <br>
   {{/each}}
