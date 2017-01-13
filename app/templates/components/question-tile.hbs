@@ -1,6 +1,6 @@
 <li>
   <div class="well">
-    <h4>{{question.quest}}</h4>
+    <h4>{{#link-to 'question' question.id}}{{question.quest}}{{/link-to}}</h4>
     <hr>
     Author: {{question.author}}
     <br>
