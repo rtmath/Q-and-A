@@ -2,8 +2,9 @@
 
 <p>This is a wicked sick Q&A website. Here are all the questions users have asked so far: </p>
 
+
 {{#each model as |question|}}
-  {{question.question}}<hr>
-  by {{question.author}}<br>
-  Additional Notes: {{question.notes}}
+  {{question-tile question=question}}
 {{/each}}
+
+{{new-question saveQuestion="saveQuestion"}}

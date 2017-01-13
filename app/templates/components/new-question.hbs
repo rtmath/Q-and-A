@@ -1,0 +1,24 @@
+
+{{#if addNewQuestion}}
+    <form>
+      <div>
+        <label>Question</label>
+        {{input value=quest}}
+      </div>
+
+      <div>
+        <label>Your name</label>
+        {{input value=author}}
+      </div>
+
+      <div>
+        <label>Additional Notes</label>
+        {{input value=notes}}
+      </div>
+
+      <button {{action 'saveQuestion'}}>Ask</button>
+      <button {{action 'hideQForm'}}>Cancel</button>
+    </form>
+  {{else}}
+    <button {{action 'newQuestion'}}>Test</button>
+{{/if}}
