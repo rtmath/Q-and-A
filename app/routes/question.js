@@ -20,7 +20,7 @@ export default Ember.Route.extend({
       });
       Ember.RSVP.all(answer_deletions).then(function() {
         return question.destroyRecord();
-      })
+      });
       this.transitionTo('index');
     },
 

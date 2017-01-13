@@ -1,20 +1,25 @@
-<h3>{{question.quest}}</h3>
-<h5>by {{question.author}}</h5>
+<div class="deetHeader">
+  <h3>{{question.quest}}</h3>
+</div>
+<div class="deetAuthor">
+  <h5>by {{question.author}}</h5>
+</div>
 
-<span>{{question.notes}}</span>
+<div class="qDetails">
+  <span class="qNotes">{{question.notes}}</span>
 
-<div>{{#link-to 'update' question.id}}
-  <span class="glyphicon glyphicon-pencil"></span>
-{{/link-to}}</div>
 
-<button {{action 'delete' question}}>
-  <span class="glyphicon glyphicon-trash"></span>
-</button>
+  <button {{action 'delete' question}}>
+    <span class="glyphicon glyphicon-trash"></span>
+  </button>
+  <button>{{#link-to 'update' question.id}}
+    <span class="glyphicon glyphicon-pencil"></span>
+    {{/link-to}}</button>
+</div>
+<div class="hr">
 
-<hr>
-<ul>
-  {{#each question.answers as |answer|}}
-    {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
-    <br>
-  {{/each}}
-</ul>
+</div>
+
+{{#each question.answers as |answer|}}
+  {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
+{{/each}}

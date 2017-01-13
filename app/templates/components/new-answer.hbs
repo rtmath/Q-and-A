@@ -11,10 +11,9 @@
         {{input value=answerBody}}
       </div>
 
-      <button {{action 'saveAnswer'}}>Submit</button>
-      <button {{action 'hideAForm'}}>Cancel</button>
+      <button class="btn btn-success" {{action 'saveAnswer'}}>Submit</button>
+      <button class="btn btn-success" {{action 'hideAForm'}}>Cancel</button>
     </form>
   {{else}}
-    <button {{action 'newAnswer'}}>Add Answer</button>
+    <button class="btn btn-success leftindent" {{action 'newAnswer'}}>Add Answer</button>
 {{/if}}
-<hr>

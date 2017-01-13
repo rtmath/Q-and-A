@@ -1,8 +1,13 @@
 
-Answer by: {{answer.author}}
-<div>
-  {{answer.answerBody}}
-  <button {{action 'delete' answer}}>
-    <span class="glyphicon glyphicon-trash"></span>
-  </button>
+<div class="wells">
+  <div class="aHeader">
+    {{answer.answerBody}}
+  </div>
+  <div class="answeredBy">
+    Answer by: {{answer.author}}
+    <button {{action 'delete' answer}}>
+      <span class="glyphicon glyphicon-trash"></span>
+    </button>
+  </div>
+  <br>
 </div>

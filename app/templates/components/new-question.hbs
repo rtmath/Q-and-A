@@ -16,9 +16,9 @@
         {{input value=notes}}
       </div>
 
-      <button {{action 'saveQuestion'}}>Ask</button>
-      <button {{action 'hideQForm'}}>Cancel</button>
+      <button class="btn btn-success" {{action 'saveQuestion'}}>Ask</button>
+      <button class="btn btn-success" {{action 'hideQForm'}}>Cancel</button>
     </form>
   {{else}}
-    <button {{action 'newQuestion'}}>New Question</button>
+    <button class="btn btn-success center-block" {{action 'newQuestion'}}>New Question</button>
 {{/if}}

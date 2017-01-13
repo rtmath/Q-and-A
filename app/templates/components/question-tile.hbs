@@ -1,7 +1,16 @@
-<li>
-  <div class="well">
-    <h4>{{#link-to 'question' question.id}}{{question.quest}}{{/link-to}}</h4>
-    Asked by: {{question.author}}
+
+  <div class="wells">
+    <div class="qHeader">{{#link-to 'question' question.id}}{{question.quest}}{{/link-to}}</div>
+    <div class="askedBy">
+      Asked by: {{question.author}}
+    </div>
+    <div class="noReplies">
+      Replies:
+      {{#if question.answers}}
+        {{question.answers.length}}
+        {{else}}
+          0
+      {{/if}}
+    </div>
     <br>
   </div>
-</li>

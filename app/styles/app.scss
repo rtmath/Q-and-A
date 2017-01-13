@@ -1,0 +1,86 @@
+.centered {
+  text-align: center;
+}
+
+.wells {
+  border: 1px solid black;
+  border-radius: 7px;
+  padding: 2% 2% 0%;
+  margin: 2%;
+}
+
+.qHeader, .aHeader {
+  font-size: 1.4em;
+  margin-bottom: .5%;
+}
+
+.qDetails {
+  padding-left: 2%;
+  padding-right: 2%;
+  min-height: 30px;
+  overflow-x: auto;
+  button {
+    margin-left: .5%;
+    float: right;
+  }
+  .qNotes {
+    line-height: 30px;
+  }
+}
+
+
+
+.deetHeader {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  h3 {
+    margin: 0;
+    flex: 1 100%;
+  }
+}
+
+.deetAuthor {
+  margin-left: 2%;
+  margin-bottom: 3%;
+}
+
+.hr {
+  margin-top: 2%;
+  margin-bottom: 3%;
+  border-bottom: 1px solid lightgrey;
+}
+
+.noReplies {
+  font-size: .9em;
+}
+
+.mynavbar {
+  background-color: darkgrey;
+  height: 25px;
+  margin-bottom: 3%;
+}
+
+#intro {
+  margin-bottom: 3%;
+}
+
+.askedBy {
+  font-size: .9em;
+  float: right;
+}
+
+.upQuestion {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.leftindent {
+  margin-left: 2%;
+}
+
+.ember-view {
+  a {
+    color: black;
+  }
+}
