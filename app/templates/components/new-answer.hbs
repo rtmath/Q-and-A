@@ -1,0 +1,19 @@
+
+{{#if addNewAnswer}}
+    <form>
+      <div>
+        <label>Your name</label>
+        {{input value=author}}
+      </div>
+
+      <div>
+        <label>Answer</label>
+        {{input value=answerBody}}
+      </div>
+
+      <button {{action 'saveAnswer'}}>Submit</button>
+      <button {{action 'hideAForm'}}>Cancel</button>
+    </form>
+  {{else}}
+    <button {{action 'newAnswer'}}>Add Answer</button>
+{{/if}}

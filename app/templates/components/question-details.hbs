@@ -1,4 +1,15 @@
 
 <span>More details about {{question.author}}'s question</span>
 <br>
-{{#link-to 'index'}}Return to Home{{/link-to}}
+<br>
+<br>
+<br>
+
+<ul>
+  {{#each question.answers as |answer|}}
+    {{answer-tile answer=answer}}
+    <br>
+    <br>
+    <br>
+  {{/each}}
+</ul>

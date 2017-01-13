@@ -2,3 +2,8 @@
 <h5>by {{model.author}}</h5>
 
 {{question-details question=model}}
+
+{{new-answer saveAnswer="saveAnswer" question=model}}
+
+<hr>
+{{#link-to 'index'}}Return to Home{{/link-to}}
