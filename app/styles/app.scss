@@ -1,12 +1,29 @@
+//Base: 5CB85C
+$LIGHTEST: #BAE8BA;
+$LIGHTER: #8AD38A;
+$DARK: #369836;
+$DARKEST: #1B7C1B;
+$WHITE: #EAF1EA;
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to bottom right, $LIGHTEST, $WHITE);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .centered {
   text-align: center;
 }
 
 .wells {
-  border: 1px solid black;
+  border: 2px solid $DARKEST;
   border-radius: 7px;
+  background-color: $LIGHTER;
   padding: 2% 2% 0%;
   margin: 2%;
+  overflow: hidden;
 }
 
 .qHeader, .aHeader {
@@ -48,26 +65,66 @@
 .hr {
   margin-top: 2%;
   margin-bottom: 3%;
-  border-bottom: 1px solid lightgrey;
+  display:block;
+  border:none;
+  color:white;
+  height:2px;
+  background:black;
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#888), to($LIGHTEST));
 }
 
 .noReplies {
   font-size: .9em;
 }
 
-.mynavbar {
-  background-color: darkgrey;
-  height: 25px;
-  margin-bottom: 3%;
+.navbar-container {
+  background-color: $LIGHTER;
+  height: 35px;
+  margin-bottom: 1%;
+  border: 2px solid $DARKEST;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: row;
+  .navtitle {
+    line-height: 35px;
+    font-weight: bold;
+    font-size: 1.4em;
+    flex: 1 100%;
+    text-align: center;
+  }
+}
+
+.centerform {
+  display: flex;
+  text-align: center;
+  .form-container {
+    flex: 1 100%;
+    .inline {
+      display: inline-block;
+      text-align: right;
+      margin-right: 70px;
+      margin-bottom: 1.5%;
+    }
+  }
 }
 
 #intro {
   margin-bottom: 3%;
+  padding: 2%;
+  color: black;
+  font-weight: 550;
 }
 
 .askedBy {
   font-size: .9em;
   float: right;
+}
+
+.answeredBy {
+  float: right;
+    button {
+      margin-bottom: 5%;
+    }
 }
 
 .upQuestion {
@@ -77,6 +134,14 @@
 
 .leftindent {
   margin-left: 2%;
+}
+
+.topmargin {
+  margin-top: 2%;
+}
+
+.maxwidth {
+  width: 100%;
 }
 
 .ember-view {

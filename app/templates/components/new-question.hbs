@@ -1,24 +1,30 @@
 
 {{#if addNewQuestion}}
-    <form>
-      <div>
-        <label>Question</label>
-        {{input value=quest}}
-      </div>
+  <div class="centerform">
+    <div class="form-container">
+      <form>
+        <div class="inline">
+          <div>
+            <label>Question</label>
+            {{input value=quest}}
+          </div>
 
-      <div>
-        <label>Your name</label>
-        {{input value=author}}
-      </div>
+          <div>
+            <label>Your name</label>
+            {{input value=author}}
+          </div>
 
-      <div>
-        <label>Additional Notes</label>
-        {{input value=notes}}
-      </div>
+          <div>
+            <label>Additional Notes</label>
+            {{input value=notes}}
+          </div>
+        </div><br>
 
-      <button class="btn btn-success" {{action 'saveQuestion'}}>Ask</button>
-      <button class="btn btn-success" {{action 'hideQForm'}}>Cancel</button>
-    </form>
+        <button class="btn btn-success" {{action 'saveQuestion'}}>Ask</button>
+        <button class="btn btn-success" {{action 'hideQForm'}}>Cancel</button>
+      </form>
+    </div>
+  </div>
   {{else}}
     <button class="btn btn-success center-block" {{action 'newQuestion'}}>New Question</button>
 {{/if}}

@@ -1,19 +1,21 @@
 
 {{#if addNewAnswer}}
-    <form>
-      <div>
-        <label>Your name</label>
-        {{input value=author}}
-      </div>
+    <div class="leftindent">
+      <form>
+        <div>
+          <label>Your name</label><br>
+          {{input value=author}}
+        </div>
 
-      <div>
-        <label>Answer</label>
-        {{input value=answerBody}}
-      </div>
+        <div>
+          <label>Answer</label><br>
+          {{input class="maxwidth" value=answerBody}}
+        </div>
 
-      <button class="btn btn-success" {{action 'saveAnswer'}}>Submit</button>
-      <button class="btn btn-success" {{action 'hideAForm'}}>Cancel</button>
-    </form>
+        <button class="btn btn-success topmargin" {{action 'saveAnswer'}}>Submit</button>
+        <button class="btn btn-success topmargin" {{action 'hideAForm'}}>Cancel</button>
+      </form>
+    </div>
   {{else}}
     <button class="btn btn-success leftindent" {{action 'newAnswer'}}>Add Answer</button>
 {{/if}}

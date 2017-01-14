@@ -1,0 +1,43 @@
+{
+  "answers" : {
+    "-KaOyOywSHAbHtYQuSv2" : {
+      "answerBody" : "You just know when you know, dood!",
+      "author" : "doodmeister",
+      "question" : "-KaOctPIPAWrLrtmbM-p"
+    },
+    "-KaP5QchriGIgBd2qNrN" : {
+      "answerBody" : "Oh yeah bro, go ahead and apply now! You'll be rock solid.",
+      "author" : "the dude",
+      "question" : "-KaOctPIPAWrLrtmbM-p"
+    },
+    "-KaPGWP_X0ZSkjrex4cp" : {
+      "answerBody" : "Call the local towing company, they should get you squared away.",
+      "author" : "winifredxoxo",
+      "question" : "-KaOhNMaTyqPSDEWa-dx"
+    }
+  },
+  "questions" : {
+    "-KaOctPIPAWrLrtmbM-p" : {
+      "answers" : {
+        "-KaOyOywSHAbHtYQuSv2" : true,
+        "-KaP5QchriGIgBd2qNrN" : true
+      },
+      "author" : "username123",
+      "notes" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id",
+      "quest" : "How do I know when I'm ready to apply for a job?"
+    },
+    "-KaOhNMaTyqPSDEWa-dx" : {
+      "answers" : {
+        "-KaPGWP_X0ZSkjrex4cp" : true
+      },
+      "author" : "lenny",
+      "notes" : "I'm really not sure what to do!",
+      "quest" : "What should I do if someone parked in my parking spot?"
+    },
+    "-KaPGhK0uWD24RT4x4Tm" : {
+      "author" : "laurasmith08",
+      "notes" : "It's freezing! Brr!",
+      "quest" : "Gosh, when is it gunna warm up around here?"
+    }
+  }
+}

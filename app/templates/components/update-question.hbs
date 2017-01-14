@@ -1,15 +1,15 @@
 <h3>Update Question: <br>
   <span class="upQuestion">"{{question.quest}}"</span></h3>
-  <div>
+  <div class="leftindent">
     <form>
       <div class="form-group">
-        <label>Question:</label>
+        <label>Question:</label><br>
         {{input type="text" value=quest placeholder=question.quest}}
       </div>
 
       <div class="form-group">
-        <label>Notes:</label>
-        {{input value=notes placeholder=question.notes}}
+        <label>Notes:</label><br>
+        {{input class="maxwidth" value=notes placeholder=question.notes}}
       </div>
 
       <button class="btn btn-success"{{action 'update' question}}>Save</button>
