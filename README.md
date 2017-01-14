@@ -19,9 +19,9 @@ You will need the following things properly installed on your computer.
 * `npm install`
 * `bower install`
 
-I have also included 'seed.json' for you to seed your Firebase database if you would like to.
-
 ## Running / Development
+
+(I included a 'seed.json' for you to seed your Firebase database if you would like to.)
 
 * In Google's firebase console, create a new project
 * Select 'Add Firebase to your web app' on the Overview screen
